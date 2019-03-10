@@ -1,12 +1,22 @@
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CompOneComponent } from './comp-one/comp-one.component';
+import { HeaderComponent } from './header/header.component';
+import { AsideComponent } from './aside/aside.component';
+import { AboutComponent } from './about/about.component';
+import { ChangeThemeComponent } from './change-theme/change-theme.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CompOneComponent,
+    HeaderComponent,
+    AsideComponent,
+    AboutComponent,
+    ChangeThemeComponent
   ],
   imports: [
     BrowserModule,
@@ -16,3 +26,5 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

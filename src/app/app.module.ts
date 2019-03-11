@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { AsideComponent } from './aside/aside.component';
 import { AboutComponent } from './about/about.component';
 import { ChangeThemeComponent } from './change-theme/change-theme.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,10 @@ import { ChangeThemeComponent } from './change-theme/change-theme.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'YOUR_KEY'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

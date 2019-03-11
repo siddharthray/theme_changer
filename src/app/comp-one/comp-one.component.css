@@ -2,3 +2,6 @@
     background-image: url("../../assets/Images/white.jpg");
     background-size:cover;
 }
+agm-map {
+  height: 300px;
+}
